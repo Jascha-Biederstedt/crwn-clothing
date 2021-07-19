@@ -3,8 +3,16 @@
   flex-direction: column;
   margin-bottom: 30px;
 
+  @media only screen and (max-width: 800px) {
+    align-items: center;
+  }
+
   .title {
     width: 100px;
+
+    @media only screen and (max-width: 800px) {
+      text-align: center;
+    }
 
     & h2 {
       font-size: 28px;
@@ -15,5 +23,12 @@
   .preview {
     display: flex;
     justify-content: space-between;
+
+    @media only screen and (max-width: 800px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 15px;
+      grid-row-gap: 45px;
+    }
   }
 }

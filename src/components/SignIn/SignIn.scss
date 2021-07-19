@@ -2,6 +2,30 @@
   width: 380px;
   display: flex;
   flex-direction: column;
+  position: relative;
+
+  @media only screen and (max-width: 1024px) {
+    margin: 20px 0 150px;
+    text-align: center;
+  }
+
+  @media only screen and (max-width: 600px) {
+    width: 300px;
+  }
+
+  &::after {
+    @media only screen and (max-width: 1024px) {
+      position: absolute;
+      content: '';
+      height: 1px;
+      background-color: #808080;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 100px;
+      top: 125%;
+    }
+  }
 
   .title {
     margin: 10px 0;

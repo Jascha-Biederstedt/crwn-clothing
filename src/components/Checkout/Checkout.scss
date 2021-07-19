@@ -6,6 +6,18 @@
   align-items: center;
   margin: 50px auto 0;
 
+  @media only screen and (max-width: 1024px) {
+    width: 70%;
+  }
+
+  @media only screen and (max-width: 800px) {
+    width: 80%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    width: 90%;
+  }
+
   .checkout-header {
     width: 100%;
     padding: 10px 0;
@@ -19,6 +31,17 @@
 
       &:last-child {
         width: 8%;
+
+        @media only screen and (max-width: 600px) {
+          width: 11%;
+          text-align: right;
+        }
+      }
+
+      &:nth-child(4) {
+        @media only screen and (max-width: 600px) {
+          width: 20%;
+        }
       }
     }
   }
